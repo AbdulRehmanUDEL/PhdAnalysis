@@ -1,0 +1,19 @@
+#You will have to replace some of the values with the the locations that are relevant
+#for your machine
+#Submit a job using this script by running the following from the npx node
+#condor_submit NPXSubmissionTemplate.sub
+
+Executable = /home/arehman/work/Git/TrainingAndTesting/data-production/taxi-noise/MakeTraces.sh
+
+Error =  /home/arehman/Output_Error_Files/err/Job-MJ_$(Process).err
+Output =  /home/arehman/Output_Error_Files/out/Job-MJ_$(Process).out
+Log = /scratch/arehman/Job_$(Process).log
+
+request_memory = 35GB
+
+request_cpus = 1
+
+Arguments= $(Process)
+
+#we are submitting 10 jobs (will replace $(Process) with the current job number)
+Queue 10
