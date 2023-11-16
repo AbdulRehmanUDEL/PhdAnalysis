@@ -156,16 +156,6 @@ class DataExtractor(icetray.I3Module):
     print("Finishing up..")
 
 ##########################################################################################################################
-# def PrintKeys(frame):
-#   fsn_map = frame["DeconvolvedFilteredWaveformWithBackgroundVoltage"]
-#   # fn_map = frame["TAXINoiseMap"]
-
-#   for antkey in fsn_map.keys():
-#     chmap = fsn_map[antkey]
-#     for chkey in chmap.keys():
-#       print("keys ant ch ", antkey, chkey)
-##########################################################################################################################
-
 NBins = 1000    #Number of bins at 1ns sampling
 upsampleFactor = 4
 bandLimits = [60 * I3Units.megahertz, 350 * I3Units.megahertz]
