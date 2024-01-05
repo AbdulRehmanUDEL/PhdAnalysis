@@ -1,4 +1,4 @@
-1- This directory has several Notebooks containing different result plots
+This directory has several Notebooks containing different result plots (Please make sure to change the directories (input-output locations) )
 
 2- DataCreation_AndPlots --> Notebook to create the dataset for both classifier and Denoiser training and testing. 
 
