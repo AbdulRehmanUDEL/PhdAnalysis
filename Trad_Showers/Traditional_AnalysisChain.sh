@@ -31,7 +31,7 @@ done
 GCDFILE="/home/arehman/work/DeepAnalysis/SurveyGCDFile.i3.gz"
 ##################################################
 Month="MayJune"
-OutDir='/home/arehman/work/DeepAnalysis/ShowerSearch/RadioShowers/Final_Trad_Upsampled_InshaAllah/Chunks16'
+OutDir='/home/arehman/work/DeepAnalysis/ShowerSearch/RadioShowers/Final_Trad/Chunks16'
 
 CALL="$ICETRAY_ENV $PYTHON_SCRIPT"
 CALL="$CALL --input $TAXIFILES --output $OutDir/$Month/$1 --gcd $GCDFILE --month $Month"
