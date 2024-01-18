@@ -1,0 +1,21 @@
+BaseDir = /home/arehman/work/DeepAnalysis/submission-scripts
+ShellScript = Traditional_AnalysisChain.sh
+Executable = $(BaseDir)/$(ShellScript)
+
+Error = /home/arehman/work/DeepAnalysis/Trad-logs/err/$(run_start).err
+Output = /home/arehman/work/DeepAnalysis/Trad-logs/out/$(run_start).out
+Log = /home/arehman/work/DeepAnalysis/Trad-logs/log/$(run_start).log
+
+
+# settings
+universe = vanilla
+request_memory = 12 GB
+request_cpus = 1
+getenv = True
+
+Arguments = $(run_start) $(run_stop)
+
+#Reads the text file (with one column) and use the value as argument. No of rows --> No of Jobs
+
+Queue run_start from AprToJunIds.txt
+#Queue run_start from JanToFebIds.txt
